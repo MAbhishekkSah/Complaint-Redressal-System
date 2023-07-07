@@ -1,0 +1,14 @@
+.formClass{
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 31.2%;
+    background-color: beige;
+    height: 480px;
+}
+#inputId{
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:darkolivegreen;
+    width: 550px;
+    border-width: 2px;
+}

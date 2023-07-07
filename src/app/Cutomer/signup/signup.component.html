@@ -1,0 +1,24 @@
+<br><div class="container" >
+    <br><br>
+    <h2 style="color: burlywood;"><b>Enter below details to Sign Up!</b></h2><br> 
+    <hr><br>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group" style="text-align: center; padding-left: 23%;">
+        <input class="form-control" placeholder="Enter Username" type="text" formControlName="userName" id="inputId">
+        <br><br>
+        <input class="form-control" placeholder="Enter Contact No" type="text" formControlName="contactNo" id="inputId">
+        <br><br>
+        <input class="form-control" placeholder="Enter Password" type="password" formControlName="password" id="inputId">
+        <br><br>
+    </div>
+    <div style="text-align: center;" class="container1">
+        <button class="btn btn-success" style="width: 250px !important;  font-size: 20px;" (click)="onSubmit()"><span class="glyphicon glyphicon-user">
+        </span>&nbsp;&nbsp;Sign Up</button><br><br>
+    </div>
+</form>
+<div>
+    <span style="color: white; font-size: 15px;">or Already Registered!, &nbsp;</span><a routerLink="../login"><span style="font-size: 15px;">Login</span></a>
+</div>
+<br><br>
+</div>
+<router-outlet></router-outlet>

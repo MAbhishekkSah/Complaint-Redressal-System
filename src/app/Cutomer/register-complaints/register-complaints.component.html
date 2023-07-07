@@ -1,0 +1,18 @@
+<div class="container" style="text-align: center;">
+    <h1><span style="color: coral;"><b>Please Fill the below details to Register a Complaint: - </b></span></h1>
+</div><br><br>
+<div class="formClass">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <select formControlName="category" class="form-control" id="inputId">
+            <option [defaultSelected]="true">Please select a Category</option>
+            <option>cannot make a call, but receive a call</option>
+            <option>can make calls, but cannot receive calls</option>
+            <option>neither make nor receive calls</option>
+        </select><br>
+        <input type="text" class="form-control" formControlName="description" placeholder="Enter Description" id="inputId"><br>
+        <input type="text" class="form-control" formControlName="pinCode" placeholder="Enter Your Pin Code" id="inputId"><br>
+        <input type="hidden" class="form-control" formControlName="user_id"> <br>
+        <span style="padding-right: 48%;"><input type="submit" value="Submit" class="btn btn-success" style="font-size: 20px;"></span>
+    </form>
+</div>
+<router-outlet></router-outlet>

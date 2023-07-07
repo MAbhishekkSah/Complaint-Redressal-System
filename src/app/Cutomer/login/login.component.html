@@ -1,0 +1,31 @@
+<br><div class="container" >
+    <br><br>
+    <h2 style="color: burlywood;"><b>Please Login or SignUp First!</b></h2><br> 
+    <hr><br>
+    <div class="form-group" style="text-align: center; padding-left: 23%;">
+        <input class="form-control" placeholder="Enter Username" type="text" id="inputId" [(ngModel)]="data.name">
+        <br><br>
+        <input class="form-control" placeholder="Enter Password" type="password" id="inputId" [(ngModel)]="data.password">
+        <br><br>
+    </div>
+    <div style="text-align: center;" class="container1">
+        <button class="btn btn-success" style="width: 250px !important; font-size: 20px;" (click)="login()"><span class="glyphicon glyphicon-user">
+        </span>&nbsp;&nbsp;LogIn As User</button><br><br>
+        <span style="color: white; font-size: 15px;">or New User!, &nbsp;</span><a routerLink="../signup"><span style="font-size: 15px;">SignUp</span></a>
+    </div>
+    <hr style="border-width: 1px;"><br>
+    <div style="text-align: center;" class="container1">
+        <button class="btn btn-success" style="width: 250px !important; font-size: 20px;" routerLink="../adminLogin"><span class="glyphicon glyphicon-wrench">
+        </span>&nbsp;&nbsp;LogIn As Admin</button><br><br>
+    </div><br>
+    <div style="text-align: center;" class="container1">
+        <button class="btn btn-success" style="width: 250px !important; font-size: 20px;" routerLink="../managerLogin"><span class="glyphicon glyphicon-log-in">
+        </span>&nbsp;&nbsp;LogIn As Manager</button><br><br>
+    </div><br>
+    <div style="text-align: center;" class="container1">
+        <button class="btn btn-success" style="width: 250px !important;font-size: 20px;" routerLink="../engineerLogin"><span class="glyphicon glyphicon-log-in">
+        </span>&nbsp;&nbsp;LogIn As Tech Expert</button><br><br>
+    </div>
+    <br><br>
+</div>
+<router-outlet></router-outlet>

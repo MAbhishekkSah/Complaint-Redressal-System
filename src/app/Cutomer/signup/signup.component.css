@@ -1,0 +1,18 @@
+.form-control{
+    border-width: 2px;
+    border-radius: 5px;
+    width: 70%;
+    border-color:grey;
+}
+.container{
+    text-align: center;
+    background-color:black;
+    width: 50%;
+}
+#inputId{
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:darkolivegreen;
+    width: 400px;
+    border-width: 2px;
+}
